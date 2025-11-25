@@ -44,16 +44,19 @@
         text-align: center;
         padding: 20px 0;
       }
-      
-      
+
+
       @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
+
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+      }
 
       .logo {
         max-width: 180px;
@@ -61,7 +64,7 @@
         margin-top: 40px;
         animation: float 3s ease-in-out infinite;
 
-      
+
       }
 
       /* Navigation */
@@ -91,10 +94,10 @@
         width: 100%;
         position: relative;
         overflow: visible;
-      
+
 
       }
-      
+
 
       .banner h1 {
         color: white;
@@ -102,8 +105,8 @@
         font-family: "Protest Revolution", sans-serif;
         font-weight: 400;
         font-style: normal;
-        
-     
+
+
       }
 
       h2 {
@@ -112,47 +115,51 @@
         font-family: "Protest Revolution", sans-serif;
         font-weight: 400;
         font-style: normal;
-       
+
       }
 
       .banner p {
         color: white;
-        font-family: "Annie Use Your Telescope",  cursive;
+        font-family: "Annie Use Your Telescope", cursive;
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
         line-height: 40px;
         font-size: 20px;
         max-width: 600px;
-       
+
       }
 
 
       p {
-        font-family: "Annie Use Your Telescope",  cursive;
+        font-family: "Annie Use Your Telescope", cursive;
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
         font-size: 20px;
-      
-      
-       
+
+
+
       }
 
-      .below-banner {
-        margin-top: 230px;
-        
- 
-      }
-
-      .roger-text {
-        position: absolute;
+      .Zorotext {
+        margin-top: 400px;
         left: 0;
-        bottom: -1480px;
         max-width: 600px;
         line-height: 40px;
-       
+
+
       }
+
+      .Namitext {
+        margin-top: 550px;
+        float: right;
+        max-width: 600px;
+        line-height: 40px;
+
+
+      }
+
 
       .summary-text {
         position: absolute;
@@ -160,17 +167,24 @@
         bottom: -4500px;
         max-width: 600px;
         line-height: 40px;
-      } 
-        
-        
-        .banner-image {
+      }
+
+
+      .banner-image {
         position: absolute;
         right: 120px;
         bottom: -120px;
         max-width: 342.3px;
         z-index: 10;
 
-  
+      }
+      
+      .Zoro-image {
+        position: absolute;
+        right: 100px;
+        bottom: -200px;
+        max-width: 450px;
+         
       }
       
     </style>
@@ -205,51 +219,41 @@
           <h1>The Straw hat crew - Original Crew</h1>
 
           <p>
-           Born from a captain’s impossible dream, the Straw Hat Pirates began as scattered souls with fragile hopes.
-          Luffy gave each member the freedom to chase dreams they once thought unreachable. Together, they toppled tyrants, rewrote the fate of nations, and shook the world’s foundations. A family bound not by blood, but by courage and destiny.</p>
-          
+            Born from a captain’s impossible dream, the Straw Hat Pirates began as scattered souls with fragile hopes.
+            Luffy gave each member the freedom to chase dreams they once thought unreachable. Together, they toppled tyrants, rewrote the fate of nations, and shook the world’s foundations. A family bound not by blood, but by courage and destiny.</p>
+
           <img src="BannerDecor.png" alt="Boat" class="banner-image">
 
-          
+
         </div>
       </div>
 
       <div class="container">
 
-        <div class="container below-banner">
-          <p>a world where the weight of history rests in the hearts of pirates.</p>
+        <div class="Zorotext">
+          <h2>
+            Rorona Zoro - Swordsman
+          </h2>
+          <p>A relentless warrior whose loyalty never wavers. Zoro seeks to become the world’s strongest swordsman, honoring a promise from his childhood and carving his strength into legend.</p>
+        </div>
+ 
+        <img src="Zoro.png" alt="zoro" class="Zoro-image">
+        <div class="Namitext">
+          
+          <h2>
+            Nami - Navigator
+          </h2>
+          <p>A brilliant strategist and master thief turned navigator, Nami can read the sea like no other. Her dream is to draw a complete map of the entire world, a record of every island she’s ever touched.</p>
         </div>
 
-      </div>
-
-
-      <div class="container" style="position: relative;">
-        <div class="roger-text">
-
-          <p>
-            Wealth, fame, power... Gold Roger, the King of the Pirates, obtained this and everything else the world had to offer and his dying words drove countless souls to the seas.
-          </p> <br>
-          <p>
-            "You want my treasure? You can have it! I left everything I gathered together in one place! Now you just have to find it!" </p><br>
-          <p><br>
-            These words lured men to the Grand Line. In pursuit of dreams greater than they've ever dared to imagine! This is the time known as the 'Great Pirate Era'!
-          </p>
-        </div>
-      </div>
-
-     
-
-
-      <div class="container" style="position: relative;">
-        <div class="summary-text">
-
-
-
-      
-        </div>
       </div>
     </div>
+
+       
+   
+       
     
+
     <script>
       // Fade in elements on scroll
       const fadeElements = document.querySelectorAll('.banner, .below-banner, .boat-image, .roger-image, .sword-image, .roger-text, .map-image, .c1-image, .star-image, .poster-image, .ship-image, .summary-text, .joyboy-image, .wave-banner');
@@ -272,6 +276,6 @@
         observer.observe(el);
       });
     </script>
-    
+
   </body>
 </html>
